@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "47ff8883-6478-41aa-b931-503f5925e0ed",
+		"name": "SirmaTask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7176131"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/commonProject/devs",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Kaloyan/CSVTask.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/commonProject/devs",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"commonProject",
+						"devs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
